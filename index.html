@@ -1,92 +1,66 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Trang Web Học Tập</title>
     <style>
-        .main-container {
+        /* Khung bao ngoài duy nhất, chia làm 2 vùng */
+        body {
             display: flex;
-            min-height: 100vh;
+            border: 1px solid black;
+            margin: 10px;
+            font-weight: normal;
         }
 
-        /* Cột bên trái: Màu cyan, rộng, chữ xám đậm */
-        .sidebar {
-            width: 280px;
-            background-color: cyan;
-            display: flex;
-            flex-direction: column;
-            border-right: 2px solid #555;
+        /* Vùng 1: Cột bên trái */
+        .vung-1 {
+            width: 150px;
+            border-right: 1px solid black;
+            padding: 10px;
         }
 
-        .sidebar a {
+        .vung-1 a {
+            display: block;
             text-decoration: none;
-            color: #555;          
-            font-weight: bold;    
-            padding: 20px 30px;
-            font-size: 1.2em;
-            border-bottom: 1px solid #555; 
-            /* Thêm transition để hiệu ứng mượt mà hơn */
-            transition: background-color 0.3s ease, color 0.3s ease;
+            color: black;
+            margin-bottom: 5px;
         }
 
-        .sidebar a:first-child {
-            border-top: 1px solid #555;
-        }
-
-        /* HIỆU ỨNG KHI DI CHUỘT TỚI */
-        .sidebar a:hover {
-            background-color: rgba(0, 0, 0, 0.1); /* Nền tối lại một chút */
-            color: #fff;                          /* Chữ chuyển sang trắng */
-        }
-
-        /* Cột nội dung chính */
-        .content {
+        /* Vùng 2: Nội dung bên phải */
+        .vung-2 {
             flex: 1;
-            padding: 40px;
-            color: #555; 
+            padding: 10px;
         }
 
-        h2 {
-            font-size: 2.2em; 
-            color: #444;    
-        }
-
-        h4 {
-            font-size: 1.6em;
-            margin-top: 25px;
+        /* Loại bỏ in đậm mặc định của các thẻ tiêu đề */
+        h2, h4 {
+            font-weight: normal;
+            margin: 0 0 10px 0;
         }
 
         ol {
-            padding-left: 50px;
-        }
-
-        li {
-            margin-bottom: 15px;
-            font-size: 1.3em; 
+            margin: 0;
+            padding-left: 25px;
         }
     </style>
 </head>
 <body>
 
-    <div class="main-container">
-        <div class="sidebar">
-            <a href="#">Trang chủ</a>
-            <a href="#">Khoa học</a>
-            <a href="#">Diễn đàn</a>
-            <a href="#">Liên hệ</a>
-        </div>
+    <div class="vung-1">
+        <a href="#">Trang chủ</a>
+        <a href="#">Khoa học</a>
+        <a href="#">Diễn đàn</a>
+        <a href="#">Liên hệ</a>
+    </div>
 
-        <div class="content">
-            <h2>Học trực tuyến ngành công nghệ thông tin</h2>
-            
-            <h4>Các khóa học</h4>
-            
-            <ol>
-                <li>Mạng máy tính</li>
-                <li>Ngôn ngữ lập trình C</li>
-                <li>Tiếng Anh</li>
-            </ol>
-        </div>
+    <div class="vung-2">
+        <h2>Học trực tuyến ngành công nghệ thông tin</h2>
+        <h4>Các khóa học</h4>
+        <ol>
+            <li>Mạng máy tính</li>
+            <li>Ngôn ngữ lập trình C</li>
+            <li>Tiếng Anh</li>
+        </ol>
     </div>
 
 </body>
