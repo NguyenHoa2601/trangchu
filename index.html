@@ -3,65 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Trang Web Học Tập</title>
-    <style>
-        /* Khung bao ngoài duy nhất, chia làm 2 vùng */
-        body {
-            display: flex;
-            border: 1px solid black;
-            margin: 10px;
-            font-weight: normal;
-        }
-
-        /* Vùng 1: Cột bên trái */
-        .vung-1 {
-            width: 150px;
-            border-right: 1px solid black;
-            padding: 10px;
-        }
-
-        .vung-1 a {
-            display: block;
-            text-decoration: none;
-            color: black;
-            margin-bottom: 5px;
-        }
-
-        /* Vùng 2: Nội dung bên phải */
-        .vung-2 {
-            flex: 1;
-            padding: 10px;
-        }
-
-        /* Loại bỏ in đậm mặc định của các thẻ tiêu đề */
-        h2, h4 {
-            font-weight: normal;
-            margin: 0 0 10px 0;
-        }
-
-        ol {
-            margin: 0;
-            padding-left: 25px;
-        }
-    </style>
 </head>
 <body>
 
-    <div class="vung-1">
-        <a href="#">Trang chủ</a>
-        <a href="#">Khoa học</a>
-        <a href="#">Diễn đàn</a>
-        <a href="#">Liên hệ</a>
-    </div>
+    <table border="1">
+            <td valign="top">
+                <a>Trang chủ</a><br>
+                <a>Khoa học</a><br>
+                <a>Diễn đàn</a><br>
+                <a>Liên hệ</a>
+            </td>
 
-    <div class="vung-2">
-        <h2>Học trực tuyến ngành công nghệ thông tin</h2>
-        <h4>Các khóa học</h4>
-        <ol>
-            <li>Mạng máy tính</li>
-            <li>Ngôn ngữ lập trình C</li>
-            <li>Tiếng Anh</li>
-        </ol>
-    </div>
+            <td valign="top">
+                <h2>Học trực tuyến ngành công nghệ thông tin</h2>
+                <h4>Các khóa học</h4>
+                <ol>
+                    <li>Mạng máy tính</li>
+                    <li>Ngôn ngữ lập trình C</li>
+                    <li>Tiếng Anh</li>
+                </ol>
+            </td>
+    </table>
 
 </body>
 </html>
