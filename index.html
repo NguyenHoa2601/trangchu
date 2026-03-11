@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang Web Học Tập</title>
+    <style>
+        .main-container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Cột bên trái: Màu cyan, rộng, chữ xám đậm */
+        .sidebar {
+            width: 280px;
+            background-color: cyan;
+            display: flex;
+            flex-direction: column;
+            border-right: 2px solid #555;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #555;          
+            font-weight: bold;    
+            padding: 20px 30px;
+            font-size: 1.2em;
+            border-bottom: 1px solid #555; 
+            /* Thêm transition để hiệu ứng mượt mà hơn */
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .sidebar a:first-child {
+            border-top: 1px solid #555;
+        }
+
+        /* HIỆU ỨNG KHI DI CHUỘT TỚI */
+        .sidebar a:hover {
+            background-color: rgba(0, 0, 0, 0.1); /* Nền tối lại một chút */
+            color: #fff;                          /* Chữ chuyển sang trắng */
+        }
+
+        /* Cột nội dung chính */
+        .content {
+            flex: 1;
+            padding: 40px;
+            color: #555; 
+        }
+
+        h2 {
+            font-size: 2.2em; 
+            color: #444;    
+        }
+
+        h4 {
+            font-size: 1.6em;
+            margin-top: 25px;
+        }
+
+        ol {
+            padding-left: 50px;
+        }
+
+        li {
+            margin-bottom: 15px;
+            font-size: 1.3em; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="sidebar">
+            <a href="#">Trang chủ</a>
+            <a href="#">Khoa học</a>
+            <a href="#">Diễn đàn</a>
+            <a href="#">Liên hệ</a>
+        </div>
+
+        <div class="content">
+            <h2>Học trực tuyến ngành công nghệ thông tin</h2>
+            
+            <h4>Các khóa học</h4>
+            
+            <ol>
+                <li>Mạng máy tính</li>
+                <li>Ngôn ngữ lập trình C</li>
+                <li>Tiếng Anh</li>
+            </ol>
+        </div>
+    </div>
+
+</body>
+</html>
