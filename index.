@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Giao diện Apple - Div ID</title>
+</head>
+<body>
+
+    <div id="vung1">
+        <span>Chọn quốc gia hoặc khu vực khác để xem nội dung dành riêng cho vị trí của bạn...</span>
+        <span><b>Việt Nam</b></span>
+        <button>Tiếp tục</button>
+    </div>
+
+    <div id="vung2">
+        <ul>
+            <li>Store</li>
+            <li>Mac</li>
+            <li>iPad</li>
+            <li>iPhone</li>
+            <li>Watch</li>
+            <li>Vision</li>
+            <li>AirPods</li>
+            <li>TV & Home</li>
+            <li>Entertainment</li>
+            <li>Accessories</li>
+            <li>Support</li>
+        </ul>
+    </div>
+
+    <div id="vung3">
+        <h1>MacBook Neo</h1>
+        <p>Amazing Mac. Surprising price.</p>
+    </div>
+
+    <div id="vung4">
+        <a>Learn more</a>
+        <a>Buy</a>
+    </div>
+
+    <div id="vung5">
+        <img src="link-anh-macbook.jpg" alt="MacBook Neo">
+    </div>
+
+</body>
+</html>
+
