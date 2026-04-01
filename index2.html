@@ -2,217 +2,90 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Giao diện Apple - MacBook Neo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giao diện Apple</title>
     <style>
-        /* 1. Tổng thể trang web */
+        /* CSS Cơ bản theo phong cách tối giản */
         body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             margin: 0;
             padding: 0;
-            /* Font chữ tối ưu: Ưu tiên SF Pro của Apple, nếu không có sẽ dùng font không chân hiện đại */
-            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
-            background-color: #000000; /* Nền đen đặc trưng của Apple cho dòng Pro */
-            color: #f5f5f7; /* Chữ màu xám trắng để không bị chói */
-            -webkit-font-smoothing: antialiased; /* Làm mượt font chữ trên macOS */
+            background-color: #ffffff;
+            color: #1d1d1f;
+            line-height: 1.5;
         }
 
-        /* 2. Vùng 1: Thanh thông báo quốc gia (Top Banner) */
+        /* Vùng 1: Thanh thông báo */
         #vung1 {
-            background-color: #1d1d1f; /* Màu nền xám cực tối */
+            background-color: #f5f5f7;
             padding: 12px 20px;
             text-align: center;
             font-size: 12px;
-            color: #86868b; /* Chữ màu xám nhạt */
-            border-bottom: 1px solid #333; /* Đường kẻ mảnh bên dưới */
-        }
-
-        #vung1 span {
-            display: inline-block;
-            vertical-align: middle;
+            color: #6e6e73;
+            border-bottom: 1px solid #d2d2d7;
         }
 
         #vung1 b {
-            color: #ffffff; /* Làm nổi bật chữ 'Việt Nam' */
-            font-weight: 600;
-            margin: 0 5px;
+            color: #1d1d1f;
         }
 
         #vung1 button {
-            background: #0071e3; /* Màu xanh dương đặc trưng của Apple */
+            background-color: #0071e3;
             color: white;
             border: none;
-            padding: 4px 11px;
-            border-radius: 980px; /* Bo tròn trịa (pill shape) */
+            padding: 4px 12px;
+            border-radius: 12px;
             font-size: 11px;
             cursor: pointer;
-            margin-left: 10px;
-            transition: background-color 0.2s ease; /* Hiệu ứng mượt khi hover */
+            margin-left: 8px;
+            transition: background 0.3s;
         }
 
         #vung1 button:hover {
-            background-color: #0077ed; /* Màu xanh sáng hơn một chút khi di chuột vào */
+            background-color: #0077ed;
         }
 
-        /* 3. Vùng 2: Thanh điều hướng (Global Navigation) */
+        /* Vùng 2: Thanh Menu điều hướng */
         #vung2 {
-            background: rgba(0, 0, 0, 0.8); /* Nền đen trong suốt 80% */
-            backdrop-filter: blur(20px); /* Hiệu ứng mờ đục 'Frosted Glass' */
-            -webkit-backdrop-filter: blur(20px); /* Hỗ trợ Safari */
-            display: flex; /* Dùng Flexbox để căn chỉnh hàng ngang */
-            justify-content: center; /* Căn các mục vào giữa */
-            gap: 30px; /* Khoảng cách giữa các mục */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
             padding: 14px 0;
-            position: sticky; /* Giữ thanh menu cố định ở trên cùng khi cuộn */
+            background: rgba(251, 251, 253, 0.8);
+            backdrop-filter: blur(10px);
+            position: sticky;
             top: 0;
-            z-index: 100; /* Đảm bảo menu luôn nằm trên cùng */
+            z-index: 1000;
         }
 
         #vung2 a {
-            color: #f5f5f7;
-            text-decoration: none; /* Bỏ gạch chân */
+            text-decoration: none;
+            color: #1d1d1f;
             font-size: 12px;
-            font-weight: 400;
-            opacity: 0.8; /* Làm mờ nhẹ */
-            transition: opacity 0.2s ease; /* Hiệu ứng mượt */
+            opacity: 0.8;
+            transition: opacity 0.2s;
             cursor: pointer;
         }
 
         #vung2 a:hover {
-            opacity: 1; /* Sáng lên khi di chuột vào */
+            opacity: 1;
+            color: #0066cc;
         }
 
-        /* 4. Vùng Hero (Tiêu đề, Phụ đề, Nút bấm) */
-        /* Căn giữa tất cả nội dung trong các vùng này */
-        #vung3 center, #vung4 center {
-            display: block; /* Thẻ center trong HTML thô cần được xử lý */
-            text-align: center;
-        }
-
-        /* Vùng 3: Tiêu đề và Phụ đề */
+        /* Vùng 3 & 4: Nội dung giới thiệu */
         #vung3 {
-            margin-top: 60px; /* Khoảng cách trên */
+            margin-top: 60px;
         }
 
         #vung3 h1 {
-            font-size: 56px; /* Cỡ chữ rất lớn cho tên sản phẩm */
+            font-size: 56px;
             font-weight: 600;
-            letter-spacing: -0.005em; /* Khoảng cách chữ hẹp lại */
-            margin-bottom: 0; /* Bỏ khoảng cách dưới */
+            letter-spacing: -0.005em;
+            margin-bottom: 0;
         }
 
         #vung3 p {
-            font-size: 28px; /* Cỡ chữ phụ đề lớn */
-            margin-top: 6px; /* Khoảng cách trên nhỏ */
-            font-weight: 400;
-            color: #f5f5f7;
-        }
-
-        /* Vùng 4: Các nút kêu gọi hành động (Call to Action) */
-        #vung4 {
-            margin-top: 18px;
-            margin-bottom: 40px;
-        }
-
-        #vung4 a {
-            color: #2997ff; /* Màu xanh dương cho liên kết */
-            text-decoration: none;
-            font-size: 21px;
-            font-weight: 400;
-            margin: 0 16px; /* Khoảng cách giữa hai nút */
-            display: inline-block;
-        }
-
-        #vung4 a:after {
-            content: ' >'; /* Thêm dấu > sau chữ mà không sửa HTML */
-            font-weight: 300;
-        }
-
-        #vung4 a:hover {
-            text-decoration: underline; /* Gạch chân khi hover */
-        }
-
-        /* 5. Vùng 5: Hình ảnh sản phẩm */
-        #vung5 {
-            padding-bottom: 80px; /* Khoảng cách dưới cùng của trang */
-        }
-
-        #vung5 center {
-            display: flex;
-            justify-content: center;
-        }
-
-        #vung5 img {
-            max-width: 90%; /* Hình ảnh không vượt quá chiều rộng màn hình */
-            height: auto; /* Giữ tỷ lệ ảnh */
-            display: block;
-            margin: 0 auto;
-            /* Thêm hiệu ứng bóng đổ nhẹ cho ảnh */
-            filter: drop-shadow(0 4px 20px rgba(255,255,255,0.05));
-        }
-
-        /* Tương thích thiết bị di động */
-        @media (max-width: 768px) {
-            #vung2 {
-                gap: 15px; /* Giảm khoảng cách menu */
-                padding: 10px 0;
-            }
-            #vung2 a {
-                font-size: 10px;
-            }
-            #vung3 h1 {
-                font-size: 40px;
-            }
-            #vung3 p {
-                font-size: 20px;
-            }
-            #vung4 a {
-                font-size: 18px;
-            }
-        }
-    </style>
-    </head>
-<body>
-
-    <div id="vung1">
-        <span>Chọn quốc gia hoặc khu vực khác để xem nội dung dành riêng cho vị trí của bạn...</span>
-        <span><b>Việt Nam</b></span>
-        <button>Tiếp tục</button>
-    </div>
-
-<div id="vung2">
-    <a>Store</a>
-    <a>Mac</a>
-    <a>iPad</a>
-    <a>iPhone</a>
-    <a>Watch</a>
-    <a>Vision</a>
-    <a>AirPods</a>
-    <a>TV & Home</a>
-    <a>Entertainment</a>
-    <a>Accessories</a>
-    <a>Support</a>
-</div>
-    
-
-    <div id="vung3">
-    <center>
-        <h1>MacBook Neo</h1>
-        <p>Amazing Mac. Surprising price.</p>
-    </center>
-    </div>
-
-    <div id="vung4">
-    <center>
-        <a>Learn more</a>
-        <a>Buy</a>
-    </center>
-</div>
-
-    <div id="vung5">
-        <center>
-        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:0/q:100/plain/https://cellphones.com.vn/media/wysiwyg/laptop/macbook/Neo/macbook-neo-8.jpg" alt="MacBook Neo"
-        width="600">
-        </center>
-    </div>
-
-</body>
-</html>
+            font-size: 24px;
+            margin-top: 10px;
+            font-weight: 4
