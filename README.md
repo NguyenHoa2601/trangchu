@@ -62,6 +62,7 @@ Nút bấm (#vung4): Biến 2 thẻ <a> thành nút bấm bo tròn (pill-shaped)
 Hình ảnh: Căn giữa và giới hạn chiều rộng tối đa để không bị tràn màn hình.
 
 Kết quả:
+
 Trước:
 <img width="1874" height="962" alt="image" src="https://github.com/user-attachments/assets/db51c0a5-5445-4e35-a28b-49a6a73b61ea" />
 
