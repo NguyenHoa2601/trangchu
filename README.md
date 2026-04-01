@@ -1,58 +1,58 @@
 AI đang dùng: Gemini.
 
-Lệnh: <!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <title>Giao diện Apple</title>
-</head>
-<body>
+Lệnh: 
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="vi"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Giao diện Apple&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
 
-    <div id="vung1">
-        <span>Chọn quốc gia hoặc khu vực khác để xem nội dung dành riêng cho vị trí của bạn...</span>
-        <span><b>Việt Nam</b></span>
-        <button>Tiếp tục</button>
-    </div>
+    &lt;div id="vung1"&gt;
+        &lt;span&gt;Chọn quốc gia hoặc khu vực khác để xem nội dung dành riêng cho vị trí của bạn...&lt;/span&gt;
+        &lt;span&gt;&lt;b&gt;Việt Nam&lt;/b&gt;&lt;/span&gt;
+        &lt;button&gt;Tiếp tục&lt;/button&gt;
+    &lt;/div&gt;
 
-<div id="vung2">
-    <a>Store</a>
-    <a>Mac</a>
-    <a>iPad</a>
-    <a>iPhone</a>
-    <a>Watch</a>
-    <a>Vision</a>
-    <a>AirPods</a>
-    <a>TV & Home</a>
-    <a>Entertainment</a>
-    <a>Accessories</a>
-    <a>Support</a>
-</div>
-    
+    &lt;div id="vung2"&gt;
+        &lt;a&gt;Store&lt;/a&gt;
+        &lt;a&gt;Mac&lt;/a&gt;
+        &lt;a&gt;iPad&lt;/a&gt;
+        &lt;a&gt;iPhone&lt;/a&gt;
+        &lt;a&gt;Watch&lt;/a&gt;
+        &lt;a&gt;Vision&lt;/a&gt;
+        &lt;a&gt;AirPods&lt;/a&gt;
+        &lt;a&gt;TV &amp; Home&lt;/a&gt;
+        &lt;a&gt;Entertainment&lt;/a&gt;
+        &lt;a&gt;Accessories&lt;/a&gt;
+        &lt;a&gt;Support&lt;/a&gt;
+    &lt;/div&gt;
 
-    <div id="vung3">
-    <center>
-        <h1>MacBook Neo</h1>
-        <p>Amazing Mac. Surprising price.</p>
-    </center>
-    </div>
+    &lt;div id="vung3"&gt;
+    &lt;center&gt;
+        &lt;h1&gt;MacBook Neo&lt;/h1&gt;
+        &lt;p&gt;Amazing Mac. Surprising price.&lt;/p&gt;
+    &lt;/center&gt;
+    &lt;/div&gt;
 
-    <div id="vung4">
-    <center>
-        <a>Learn more</a>
-        <a>Buy</a>
-	</center>
-</div>
+    &lt;div id="vung4"&gt;
+    &lt;center&gt;
+        &lt;a&gt;Learn more&lt;/a&gt;
+        &lt;a&gt;Buy&lt;/a&gt;
+    &lt;/center&gt;
+    &lt;/div&gt;
 
-    <div id="vung5">
-		<center>
-        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:0/q:100/plain/https://cellphones.com.vn/media/wysiwyg/laptop/macbook/Neo/macbook-neo-8.jpg" alt="MacBook Neo"
-        width="600">
-		</center>
-    </div>
+    &lt;div id="vung5"&gt;
+        &lt;center&gt;
+        &lt;img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:0/q:100/plain/https://cellphones.com.vn/media/wysiwyg/laptop/macbook/Neo/macbook-neo-8.jpg" alt="MacBook Neo" width="600"&gt;
+        &lt;/center&gt;
+    &lt;/div&gt;
 
-</body>
-</html>
-
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
 
 Hãy viết CSS cho đoạn mã HTML có sẵn của tôi (giữ nguyên cấu trúc HTML). Yêu cầu phong cách Apple Design System:
 Tổng thể: Sử dụng font sans-serif (như SF Pro hoặc Inter), màu chữ đen nhám (#1d1d1f), nền trắng tinh khôi.
@@ -71,14 +71,15 @@ Sau:
 <img width="1863" height="964" alt="image" src="https://github.com/user-attachments/assets/6ff2e198-09ec-4790-ac8f-575267662ed2" />
 
 Mã sau khi ra lệnh:
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giao diện Apple - MacBook Neo</title>
-    <style>
-        /* 1. Reset & Typography */
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="vi"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Giao diện Apple - MacBook Neo&lt;/title&gt;
+    &lt;style&gt;
+        /* 1. Reset &amp; Typography */
         * {
             margin: 0;
             padding: 0;
@@ -123,7 +124,7 @@ Mã sau khi ra lệnh:
             text-decoration: underline;
         }
 
-        /* 3. Vùng 2: Navigation - Sticky & Glassmorphism */
+        /* 3. Vùng 2: Navigation - Sticky &amp; Glassmorphism */
         #vung2 {
             display: flex;
             justify-content: center;
@@ -220,7 +221,7 @@ Mã sau khi ra lệnh:
             color: #fff;
         }
 
-        /* 6. Vùng 5: Image centering & Responsive */
+        /* 6. Vùng 5: Image centering &amp; Responsive */
         #vung5 {
             text-align: center;
             padding-bottom: 100px;
@@ -233,59 +234,59 @@ Mã sau khi ra lệnh:
             height: auto;
             display: block;
             margin: 0 auto;
-            border-radius: 12px; /* Thêm bo nhẹ cho ảnh hiện đại hơn */
+            border-radius: 12px;
         }
 
         /* Responsive cho Mobile */
         @media (max-width: 734px) {
             #vung3 h1 { font-size: 40px; }
             #vung3 p { font-size: 19px; }
-            #vung2 { gap: 15px; overflow-x: auto; justify-content: flex-start; padding: 0 20px; }
+            #vung2 { 
+                gap: 15px; 
+                overflow-x: auto; 
+                justify-content: flex-start; 
+                padding: 0 20px; 
+            }
         }
-    </style>
-</head>
-<body>
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
 
-    <div id="vung1">
-        <span>Chọn quốc gia hoặc khu vực khác để xem nội dung dành riêng cho vị trí của bạn...</span>
-        <span><b>Việt Nam</b></span>
-        <button>Tiếp tục</button>
-    </div>
+    &lt;div id="vung1"&gt;
+        &lt;span&gt;Chọn quốc gia hoặc khu vực khác để xem nội dung dành riêng cho vị trí của bạn...&lt;/span&gt;
+        &lt;span&gt;&lt;b&gt;Việt Nam&lt;/b&gt;&lt;/span&gt;
+        &lt;button&gt;Tiếp tục&lt;/button&gt;
+    &lt;/div&gt;
 
-    <div id="vung2">
-        <a>Store</a>
-        <a>Mac</a>
-        <a>iPad</a>
-        <a>iPhone</a>
-        <a>Watch</a>
-        <a>Vision</a>
-        <a>AirPods</a>
-        <a>TV & Home</a>
-        <a>Entertainment</a>
-        <a>Accessories</a>
-        <a>Support</a>
-    </div>
+    &lt;div id="vung2"&gt;
+        &lt;a&gt;Store&lt;/a&gt;
+        &lt;a&gt;Mac&lt;/a&gt;
+        &lt;a&gt;iPad&lt;/a&gt;
+        &lt;a&gt;iPhone&lt;/a&gt;
+        &lt;a&gt;Watch&lt;/a&gt;
+        &lt;a&gt;Vision&lt;/a&gt;
+        &lt;a&gt;AirPods&lt;/a&gt;
+        &lt;a&gt;TV &amp; Home&lt;/a&gt;
+        &lt;a&gt;Entertainment&lt;/a&gt;
+        &lt;a&gt;Accessories&lt;/a&gt;
+        &lt;a&gt;Support&lt;/a&gt;
+    &lt;/div&gt;
 
-    <div id="vung3">
-        <center>
-            <h1>MacBook Neo</h1>
-            <p>Amazing Mac. Surprising price.</p>
-        </center>
-    </div>
+    &lt;header id="vung3"&gt;
+        &lt;h1&gt;MacBook Neo&lt;/h1&gt;
+        &lt;p&gt;Amazing Mac. Surprising price.&lt;/p&gt;
+    &lt;/header&gt;
 
-    <div id="vung4">
-        <center>
-            <a>Learn more</a>
-            <a>Buy</a>
-        </center>
-    </div>
+    &lt;div id="vung4"&gt;
+        &lt;a&gt;Learn more&lt;/a&gt;
+        &lt;a&gt;Buy&lt;/a&gt;
+    &lt;/div&gt;
 
-    <div id="vung5">
-        <center>
-            <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:0/q:100/plain/https://cellphones.com.vn/media/wysiwyg/laptop/macbook/Neo/macbook-neo-8.jpg" alt="MacBook Neo">
-        </center>
-    </div>
+    &lt;div id="vung5"&gt;
+        &lt;img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:0/q:100/plain/https://cellphones.com.vn/media/wysiwyg/laptop/macbook/Neo/macbook-neo-8.jpg" alt="MacBook Neo"&gt;
+    &lt;/div&gt;
 
-</body>
-</html>
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
 
