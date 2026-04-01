@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Giao diện Apple - MacBook Neo</title>
+    <style>
+        /* 1. Tổng thể trang web */
+        body {
+            margin: 0;
+            padding: 0;
+            /* Font chữ tối ưu: Ưu tiên SF Pro của Apple, nếu không có sẽ dùng font không chân hiện đại */
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background-color: #000000; /* Nền đen đặc trưng của Apple cho dòng Pro */
+            color: #f5f5f7; /* Chữ màu xám trắng để không bị chói */
+            -webkit-font-smoothing: antialiased; /* Làm mượt font chữ trên macOS */
+        }
+
+        /* 2. Vùng 1: Thanh thông báo quốc gia (Top Banner) */
+        #vung1 {
+            background-color: #1d1d1f; /* Màu nền xám cực tối */
+            padding: 12px 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #86868b; /* Chữ màu xám nhạt */
+            border-bottom: 1px solid #333; /* Đường kẻ mảnh bên dưới */
+        }
+
+        #vung1 span {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        #vung1 b {
+            color: #ffffff; /* Làm nổi bật chữ 'Việt Nam' */
+            font-weight: 600;
+            margin: 0 5px;
+        }
+
+        #vung1 button {
+            background: #0071e3; /* Màu xanh dương đặc trưng của Apple */
+            color: white;
+            border: none;
+            padding: 4px 11px;
+            border-radius: 980px; /* Bo tròn trịa (pill shape) */
+            font-size: 11px;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: background-color 0.2s ease; /* Hiệu ứng mượt khi hover */
+        }
+
+        #vung1 button:hover {
+            background-color: #0077ed; /* Màu xanh sáng hơn một chút khi di chuột vào */
+        }
+
+        /* 3. Vùng 2: Thanh điều hướng (Global Navigation) */
+        #vung2 {
+            background: rgba(0, 0, 0, 0.8); /* Nền đen trong suốt 80% */
+            backdrop-filter: blur(20px); /* Hiệu ứng mờ đục 'Frosted Glass' */
+            -webkit-backdrop-filter: blur(20px); /* Hỗ trợ Safari */
+            display: flex; /* Dùng Flexbox để căn chỉnh hàng ngang */
+            justify-content: center; /* Căn các mục vào giữa */
