@@ -59,3 +59,160 @@
             -webkit-backdrop-filter: blur(20px); /* Hỗ trợ Safari */
             display: flex; /* Dùng Flexbox để căn chỉnh hàng ngang */
             justify-content: center; /* Căn các mục vào giữa */
+            gap: 30px; /* Khoảng cách giữa các mục */
+            padding: 14px 0;
+            position: sticky; /* Giữ thanh menu cố định ở trên cùng khi cuộn */
+            top: 0;
+            z-index: 100; /* Đảm bảo menu luôn nằm trên cùng */
+        }
+
+        #vung2 a {
+            color: #f5f5f7;
+            text-decoration: none; /* Bỏ gạch chân */
+            font-size: 12px;
+            font-weight: 400;
+            opacity: 0.8; /* Làm mờ nhẹ */
+            transition: opacity 0.2s ease; /* Hiệu ứng mượt */
+            cursor: pointer;
+        }
+
+        #vung2 a:hover {
+            opacity: 1; /* Sáng lên khi di chuột vào */
+        }
+
+        /* 4. Vùng Hero (Tiêu đề, Phụ đề, Nút bấm) */
+        /* Căn giữa tất cả nội dung trong các vùng này */
+        #vung3 center, #vung4 center {
+            display: block; /* Thẻ center trong HTML thô cần được xử lý */
+            text-align: center;
+        }
+
+        /* Vùng 3: Tiêu đề và Phụ đề */
+        #vung3 {
+            margin-top: 60px; /* Khoảng cách trên */
+        }
+
+        #vung3 h1 {
+            font-size: 56px; /* Cỡ chữ rất lớn cho tên sản phẩm */
+            font-weight: 600;
+            letter-spacing: -0.005em; /* Khoảng cách chữ hẹp lại */
+            margin-bottom: 0; /* Bỏ khoảng cách dưới */
+        }
+
+        #vung3 p {
+            font-size: 28px; /* Cỡ chữ phụ đề lớn */
+            margin-top: 6px; /* Khoảng cách trên nhỏ */
+            font-weight: 400;
+            color: #f5f5f7;
+        }
+
+        /* Vùng 4: Các nút kêu gọi hành động (Call to Action) */
+        #vung4 {
+            margin-top: 18px;
+            margin-bottom: 40px;
+        }
+
+        #vung4 a {
+            color: #2997ff; /* Màu xanh dương cho liên kết */
+            text-decoration: none;
+            font-size: 21px;
+            font-weight: 400;
+            margin: 0 16px; /* Khoảng cách giữa hai nút */
+            display: inline-block;
+        }
+
+        #vung4 a:after {
+            content: ' >'; /* Thêm dấu > sau chữ mà không sửa HTML */
+            font-weight: 300;
+        }
+
+        #vung4 a:hover {
+            text-decoration: underline; /* Gạch chân khi hover */
+        }
+
+        /* 5. Vùng 5: Hình ảnh sản phẩm */
+        #vung5 {
+            padding-bottom: 80px; /* Khoảng cách dưới cùng của trang */
+        }
+
+        #vung5 center {
+            display: flex;
+            justify-content: center;
+        }
+
+        #vung5 img {
+            max-width: 90%; /* Hình ảnh không vượt quá chiều rộng màn hình */
+            height: auto; /* Giữ tỷ lệ ảnh */
+            display: block;
+            margin: 0 auto;
+            /* Thêm hiệu ứng bóng đổ nhẹ cho ảnh */
+            filter: drop-shadow(0 4px 20px rgba(255,255,255,0.05));
+        }
+
+        /* Tương thích thiết bị di động */
+        @media (max-width: 768px) {
+            #vung2 {
+                gap: 15px; /* Giảm khoảng cách menu */
+                padding: 10px 0;
+            }
+            #vung2 a {
+                font-size: 10px;
+            }
+            #vung3 h1 {
+                font-size: 40px;
+            }
+            #vung3 p {
+                font-size: 20px;
+            }
+            #vung4 a {
+                font-size: 18px;
+            }
+        }
+    </style>
+    </head>
+<body>
+
+    <div id="vung1">
+        <span>Chọn quốc gia hoặc khu vực khác để xem nội dung dành riêng cho vị trí của bạn...</span>
+        <span><b>Việt Nam</b></span>
+        <button>Tiếp tục</button>
+    </div>
+
+<div id="vung2">
+    <a>Store</a>
+    <a>Mac</a>
+    <a>iPad</a>
+    <a>iPhone</a>
+    <a>Watch</a>
+    <a>Vision</a>
+    <a>AirPods</a>
+    <a>TV & Home</a>
+    <a>Entertainment</a>
+    <a>Accessories</a>
+    <a>Support</a>
+</div>
+    
+
+    <div id="vung3">
+    <center>
+        <h1>MacBook Neo</h1>
+        <p>Amazing Mac. Surprising price.</p>
+    </center>
+    </div>
+
+    <div id="vung4">
+    <center>
+        <a>Learn more</a>
+        <a>Buy</a>
+    </center>
+</div>
+
+    <div id="vung5">
+        <center>
+        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:0/q:100/plain/https://cellphones.com.vn/media/wysiwyg/laptop/macbook/Neo/macbook-neo-8.jpg" alt="MacBook Neo"
+        width="600">
+        </center>
+    </div>
+
+</body>
+</html>
